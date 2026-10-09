@@ -3,178 +3,200 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Samyak Jain — Software Engineer</title>
-<meta name="description" content="Samyak Jain — CS + Data Science @ UW–Madison. I build AI-powered products.">
+<title>samyak jain — software engineer</title>
+<meta name="description" content="samyak jain — cs + data science @ uw–madison. i build ai-powered products.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<nav class="nav-pill" id="nav">
-  <a href="#top" class="nav-logo">SJ</a>
-  <div class="nav-links" id="navLinks">
-    <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
-  </div>
-  <a href="#" class="btn btn-pink btn-sm" onclick="window.print();return false;" title="Print or save as PDF">Resume</a>
-  <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
-</nav>
-
-<header class="hero" id="top">
-  <div class="hero-inner">
-    <div class="news-pill reveal"><span class="news-tag">NEWS</span> Open to new grad roles · Class of 2027 <span class="news-arrow">→</span></div>
-    <h1 class="display reveal">SAMYAK<br>JAIN</h1>
-    <p class="hero-sub reveal">CS + Data Science @ UW–Madison.<br>I build AI-powered products.</p>
-    <div class="hero-ctas reveal">
-      <a href="#projects" class="btn btn-dark">View Projects</a>
-      <a href="#" class="btn btn-pink" onclick="window.print();return false;">Print / Save as PDF</a>
-    </div>
-  </div>
+<header class="site-head">
+  <a href="#top" class="brand-mark" aria-label="home">
+    <svg viewBox="0 0 32 32" width="32" height="32"><circle cx="16" cy="16" r="13" fill="#fdfbf9" stroke="#171717" stroke-width="2"/><path d="M11 20 L15 12 L17.5 17 L21 10" fill="none" stroke="#ff6f1e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a>
+  <button class="btn" onclick="window.print();return false;">resume</button>
 </header>
 
-<section class="trust reveal">
-  <div class="trust-col"><span class="trust-icon">🎓</span><div><strong>UW–Madison</strong><span>B.S. CS + Data Science</span></div></div>
-  <div class="trust-col"><span class="trust-icon">⚡</span><div><strong>SAIL × OpenAI</strong><span>SWE Intern, Summer 2025</span></div></div>
-  <div class="trust-col"><span class="trust-icon">🏆</span><div><strong>Hackathon Winner</strong><span>1st place, Modelence</span></div></div>
-</section>
+<main id="top">
 
-<section class="section" id="experience">
-  <p class="eyebrow reveal">Experience</p>
-  <h2 class="section-title reveal">WHERE I'VE<br>SHIPPED</h2>
-  <div class="cards">
-    <article class="card reveal">
-      <p class="card-date">Jun 2025 – Aug 2025 · Madison, WI</p>
-      <h3>Software Engineering Intern</h3>
-      <p class="card-org">Summer of AI Laboratory (SAIL) — sponsored by OpenAI</p>
-      <ul>
-        <li>Selected as 1 of 30 students for a competitive 8-week AI program with mentorship and hands-on product work.</li>
-        <li>Orchestrated 7 AI agents with CrewAI — reasoning workflows and multi-agent pipelines.</li>
-        <li>Built a Python FastAPI backend with a vector database for semantic search &amp; RAG.</li>
-      </ul>
-      <div class="tags"><span>CrewAI</span><span>FastAPI</span><span>Vector DB</span><span>RAG</span></div>
-    </article>
-    <article class="card reveal">
-      <p class="card-date">Sep 2024 – Dec 2024 · Madison, WI</p>
-      <h3>OOP Tutor</h3>
-      <p class="card-org">GUTS Tutoring, UW–Madison</p>
-      <ul>
-        <li>Tutored 50+ students in classes, inheritance, and polymorphism.</li>
-        <li>60%+ of students reported a letter-grade improvement after sessions.</li>
-      </ul>
-      <div class="tags"><span>Java</span><span>OOP</span><span>Mentorship</span></div>
-    </article>
-    <article class="card reveal">
-      <p class="card-date">Jan 2025 – Present · Madison, WI</p>
-      <h3>Resident Assistant</h3>
-      <p class="card-org">University of Wisconsin–Madison</p>
-      <ul>
-        <li>Manage a residential community of 30+ students.</li>
-        <li>Plan 6+ programs per semester around engagement and community resilience.</li>
-      </ul>
-      <div class="tags"><span>Leadership</span><span>Community</span></div>
-    </article>
-  </div>
-</section>
-
-<section class="section" id="projects">
-  <p class="eyebrow reveal">Projects</p>
-  <h2 class="section-title reveal">THINGS<br>I BUILT</h2>
-  <div class="cards">
-    <article class="card card-featured reveal">
-      <p class="card-date">🏆 1st Place — Modelence Hackathon</p>
-      <h3>AI SmartRepos</h3>
-      <p class="card-org">Personalized GitHub repo discovery platform</p>
-      <ul>
-        <li>Recommendation engine with onboarding quiz and multi-factor scoring.</li>
-        <li>AI-generated insights, chat, and learning guides via Repomix + GPT-4o.</li>
-        <li>Cut manual repo search time 65% · +40% profile-to-click match accuracy.</li>
-      </ul>
-      <div class="tags"><span>React</span><span>TypeScript</span><span>Tailwind</span><span>MongoDB</span><span>GPT-4o</span></div>
-      <a class="card-link" href="https://github.com/samyakjain-1/SmartRepos" target="_blank" rel="noopener">View on GitHub →</a>
-    </article>
-    <article class="card reveal">
-      <p class="card-date">Open Source</p>
-      <h3>Madgrades Contributor</h3>
-      <p class="card-org">Course data platform for UW–Madison · 1000+ weekly users</p>
-      <ul>
-        <li>Built the CourseComparison feature — side-by-side grade distributions and GPA trends.</li>
-        <li>Preserved URL state across search &amp; course pages; unified UI cut navigation steps 50%.</li>
-        <li>Code merged to main and deployed live via GitHub PRs.</li>
-      </ul>
-      <div class="tags"><span>JavaScript</span><span>React</span></div>
-      <a class="card-link" href="https://github.com/samyakjain-1/courseinsight" target="_blank" rel="noopener">View on GitHub →</a>
-    </article>
-    <article class="card reveal">
-      <p class="card-date">AI / ML</p>
-      <h3>arXiv Paper Digest</h3>
-      <p class="card-org">AI-summarized research paper browser</p>
-      <ul>
-        <li>Browse, save, and summarize arXiv papers with AI-simplified abstracts.</li>
-        <li>Vector similarity search (MongoDB Atlas Vector Search + embeddings) for personalized recommendations.</li>
-        <li>Node.js APIs + React/Tailwind frontend, GPT-4o integrated throughout.</li>
-      </ul>
-      <div class="tags"><span>React</span><span>Node.js</span><span>MongoDB</span><span>GPT-4o</span></div>
-      <a class="card-link" href="https://github.com/samyakjain-1/papers-digest" target="_blank" rel="noopener">View on GitHub →</a>
-    </article>
-  </div>
-  <div class="more-repos reveal">
-    <p class="eyebrow">More on GitHub</p>
-    <div class="repo-chips">
-      <a href="https://github.com/samyakjain-1/mirror-mind" target="_blank" rel="noopener">mirror-mind</a>
-      <a href="https://github.com/samyakjain-1/Brain-Bridge" target="_blank" rel="noopener">Brain-Bridge</a>
-      <a href="https://github.com/samyakjain-1/flashcard-gen" target="_blank" rel="noopener">flashcard-gen</a>
-      <a href="https://github.com/samyakjain-1/chatbot" target="_blank" rel="noopener">chatbot</a>
-      <a href="https://github.com/samyakjain-1/Scraper" target="_blank" rel="noopener">Scraper</a>
-      <a href="https://github.com/samyakjain-1" target="_blank" rel="noopener">github.com/samyakjain-1 →</a>
+  <!-- hero -->
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="handnote reveal">hey, i'm</p>
+      <h1 class="display reveal">samyak<br>jain</h1>
+      <p class="lede reveal">cs + data science @ uw–madison, class of '27.<br>
+        i build ai-powered products that <span class="hl">actually ship.</span></p>
+      <div class="hero-ctas reveal">
+        <a href="#projects" class="btn">see my work ↓</a>
+        <a href="mailto:samyakjain2575@gmail.com" class="btn">say hello</a>
+      </div>
+      <p class="quiet reveal">open to new grad roles · swe / ai-ml</p>
     </div>
-  </div>
-</section>
+    <div class="hero-art reveal">
+      <div class="label-sticker">
+        <div class="label-row"><span>name</span><strong>samyak jain</strong></div>
+        <div class="label-row"><span>class</span><strong>'27</strong></div>
+        <div class="label-row"><span>roll no.</span><strong>cs + ds</strong></div>
+      </div>
+      <svg class="sticker bolt" viewBox="0 0 40 64" width="44" height="70"><path d="M25 3 L7 36 h11 L15 61 L35 26 H23 Z" fill="#3b82f6" stroke="#171717" stroke-width="2.5" stroke-linejoin="round"/></svg>
+      <svg class="sticker heart" viewBox="0 0 48 44" width="52" height="48"><path d="M24 40 C10 30 4 20 4 13 C4 7 9 3 14 3 C19 3 23 7 24 11 C25 7 29 3 34 3 C39 3 44 7 44 13 C44 20 38 30 24 40 Z" fill="#ff66cf" stroke="#171717" stroke-width="2.5" stroke-linejoin="round"/><circle cx="17" cy="16" r="2.4" fill="#171717"/><circle cx="31" cy="16" r="2.4" fill="#171717"/></svg>
+      <svg class="arrow" viewBox="0 0 130 70" width="130" height="70"><path d="M10 10 C 55 6, 100 24, 112 56" fill="none" stroke="#171717" stroke-width="1.5"/><path d="M103 48 L113 57 L101 60" fill="none" stroke="#171717" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <p class="handnote small">that's me!</p>
+    </div>
+  </section>
 
-<section class="section" id="skills">
-  <p class="eyebrow reveal">Skills</p>
-  <h2 class="section-title reveal">THE<br>ARSENAL</h2>
-  <div class="skill-groups">
-    <div class="skill-group reveal"><h4>Languages</h4><div class="tags"><span>Java</span><span>Python</span><span>JavaScript</span><span>TypeScript</span><span>SQL</span><span>R</span><span>HTML/CSS</span><span>Bash</span></div></div>
-    <div class="skill-group reveal"><h4>Frameworks</h4><div class="tags"><span>React</span><span>Next.js</span><span>Node.js</span><span>Flask</span><span>FastAPI</span><span>REST</span><span>GraphQL</span><span>Tailwind CSS</span></div></div>
-    <div class="skill-group reveal"><h4>Data &amp; ML</h4><div class="tags"><span>PyTorch</span><span>TensorFlow</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>BeautifulSoup</span><span>MongoDB</span><span>Weaviate</span></div></div>
-    <div class="skill-group reveal"><h4>Tools</h4><div class="tags"><span>Git</span><span>Docker</span><span>GCP</span><span>Postman</span><span>JUnit</span><span>VS Code</span></div></div>
-    <div class="skill-group reveal"><h4>AI-assisted dev</h4><div class="tags"><span>Cursor</span><span>Claude Code</span><span>Cline</span><span>Codex</span><span>Antigravity</span></div></div>
-  </div>
-</section>
+  <!-- sticker labels -->
+  <section class="labels">
+    <div class="mini-label reveal"><span>school</span><strong>uw–madison · b.s. cs + ds</strong></div>
+    <div class="mini-label reveal"><span>summer '25</span><strong>sail × openai · swe intern</strong></div>
+    <div class="mini-label reveal"><span>trophy</span><strong>1st place · modelence hackathon</strong></div>
+  </section>
 
-<section class="section" id="education">
-  <p class="eyebrow reveal">Education</p>
-  <h2 class="section-title reveal">UW–MADISON<br>'27</h2>
-  <article class="card reveal">
-    <p class="card-date">Expected May 2027 · Madison, WI</p>
-    <h3>B.S. Computer Science + Data Science</h3>
-    <p class="card-org">University of Wisconsin–Madison</p>
-    <div class="tags"><span>SQL &amp; Databases</span><span>Data Structures</span><span>Algorithms</span><span>Linear Algebra</span><span>Supervised &amp; Unsupervised Learning</span><span>PyTorch</span><span>Operating Systems</span><span>AI/ML Systems</span></div>
-  </article>
-</section>
+  <!-- experience -->
+  <section class="section" id="experience">
+    <p class="handnote reveal">the day jobs</p>
+    <h2 class="section-title reveal">where i've<br>shipped</h2>
+    <div class="cards">
+      <article class="card reveal">
+        <p class="card-date">jun 2025 – aug 2025 · madison, wi</p>
+        <h3>software engineering intern</h3>
+        <p class="card-org">summer of ai laboratory (sail) — sponsored by openai</p>
+        <ul>
+          <li>1 of 30 students picked for a competitive 8-week ai program.</li>
+          <li>orchestrated 7 ai agents with crewai — reasoning workflows, multi-agent pipelines.</li>
+          <li>built a python fastapi backend with a vector db for semantic search &amp; rag.</li>
+        </ul>
+        <div class="tags"><span>crewai</span><span>fastapi</span><span>vector db</span><span>rag</span></div>
+      </article>
+      <article class="card reveal">
+        <p class="card-date">sep 2024 – dec 2024 · madison, wi</p>
+        <h3>oop tutor</h3>
+        <p class="card-org">guts tutoring, uw–madison</p>
+        <ul>
+          <li>tutored 50+ students in classes, inheritance, polymorphism.</li>
+          <li>60%+ reported a letter-grade bump after sessions.</li>
+        </ul>
+        <div class="tags"><span>java</span><span>oop</span><span>mentorship</span></div>
+      </article>
+      <article class="card reveal">
+        <p class="card-date">jan 2025 – present · madison, wi</p>
+        <h3>resident assistant</h3>
+        <p class="card-org">university of wisconsin–madison</p>
+        <ul>
+          <li>look after a community of 30+ students.</li>
+          <li>run 6+ programs a semester on engagement &amp; community.</li>
+        </ul>
+        <div class="tags"><span>leadership</span><span>community</span></div>
+      </article>
+    </div>
+  </section>
 
-<section class="section contact" id="contact">
-  <p class="eyebrow reveal">Contact</p>
-  <h2 class="section-title reveal">LET'S BUILD<br>SOMETHING</h2>
-  <p class="contact-sub reveal">New grad SWE / AI-ML roles · Summer &amp; full-time from 2027</p>
-  <div class="hero-ctas reveal">
-    <a href="mailto:samyakjain2575@gmail.com" class="btn btn-pink">samyakjain2575@gmail.com</a>
-    <a href="#" class="btn btn-dark" onclick="window.print();return false;">Print / Save as PDF</a>
-  </div>
-  <div class="contact-links reveal">
-    <a href="tel:+16082397261">608-239-7261</a>
-    <a href="https://linkedin.com/in/samyak1" target="_blank" rel="noopener">LinkedIn</a>
-    <a href="https://github.com/samyakjain-1" target="_blank" rel="noopener">GitHub</a>
-    <a href="https://samyak1.tech" target="_blank" rel="noopener">samyak1.tech</a>
-  </div>
-</section>
+  <!-- projects -->
+  <section class="section" id="projects">
+    <p class="handnote reveal">weekends &amp; hackathons</p>
+    <h2 class="section-title reveal">things<br>i built</h2>
+    <div class="cards">
+      <article class="card featured reveal">
+        <div class="starburst">1st place</div>
+        <p class="card-date">modelence hackathon · winner</p>
+        <h3>ai smartrepos</h3>
+        <p class="card-org">personalized github repo discovery</p>
+        <ul>
+          <li>recommendation engine with onboarding quiz + multi-factor scoring.</li>
+          <li>ai insights, chat &amp; learning guides via repomix + gpt-4o.</li>
+          <li>65% less search time · 40% better match accuracy.</li>
+        </ul>
+        <div class="tags"><span>react</span><span>typescript</span><span>tailwind</span><span>mongodb</span><span>gpt-4o</span></div>
+        <a class="card-link" href="https://github.com/samyakjain-1/SmartRepos" target="_blank" rel="noopener">take a look →</a>
+      </article>
+      <article class="card reveal">
+        <p class="card-date">open source</p>
+        <h3>madgrades contributor</h3>
+        <p class="card-org">course data platform · 1000+ weekly users</p>
+        <ul>
+          <li>built coursecomparison — side-by-side grade distributions &amp; gpa trends.</li>
+          <li>unified ui cut navigation steps by half; code merged to main.</li>
+        </ul>
+        <div class="tags"><span>javascript</span><span>react</span></div>
+        <a class="card-link" href="https://github.com/samyakjain-1/courseinsight" target="_blank" rel="noopener">take a look →</a>
+      </article>
+      <article class="card reveal">
+        <p class="card-date">ai / ml</p>
+        <h3>arxiv paper digest</h3>
+        <p class="card-org">ai-summarized research browser</p>
+        <ul>
+          <li>browse, save &amp; summarize papers with ai-simplified abstracts.</li>
+          <li>vector similarity search (mongodb atlas + embeddings) for recommendations.</li>
+        </ul>
+        <div class="tags"><span>react</span><span>node.js</span><span>mongodb</span><span>gpt-4o</span></div>
+        <a class="card-link" href="https://github.com/samyakjain-1/papers-digest" target="_blank" rel="noopener">take a look →</a>
+      </article>
+    </div>
+    <div class="more-repos reveal">
+      <p class="handnote small">more on github</p>
+      <div class="repo-chips">
+        <a href="https://github.com/samyakjain-1/mirror-mind" target="_blank" rel="noopener">mirror-mind</a>
+        <a href="https://github.com/samyakjain-1/Brain-Bridge" target="_blank" rel="noopener">brain-bridge</a>
+        <a href="https://github.com/samyakjain-1/flashcard-gen" target="_blank" rel="noopener">flashcard-gen</a>
+        <a href="https://github.com/samyakjain-1/chatbot" target="_blank" rel="noopener">chatbot</a>
+        <a href="https://github.com/samyakjain-1/Scraper" target="_blank" rel="noopener">scraper</a>
+        <a href="https://github.com/samyakjain-1" target="_blank" rel="noopener">github.com/samyakjain-1 →</a>
+      </div>
+    </div>
+  </section>
 
-<footer>
-  <p>© 2026 Samyak Jain · Designed to a DESIGN.md</p>
+  <!-- skills -->
+  <section class="section" id="skills">
+    <p class="handnote reveal">the toolbox</p>
+    <h2 class="section-title reveal">the<br>arsenal</h2>
+    <div class="skill-groups">
+      <div class="skill-group reveal"><h4>languages</h4><div class="tags"><span>java</span><span>python</span><span>javascript</span><span>typescript</span><span>sql</span><span>r</span><span>html/css</span><span>bash</span></div></div>
+      <div class="skill-group reveal"><h4>frameworks</h4><div class="tags"><span>react</span><span>next.js</span><span>node.js</span><span>flask</span><span>fastapi</span><span>rest</span><span>graphql</span><span>tailwind</span></div></div>
+      <div class="skill-group reveal"><h4>data &amp; ml</h4><div class="tags"><span>pytorch</span><span>tensorflow</span><span>pandas</span><span>numpy</span><span>matplotlib</span><span>beautifulsoup</span><span>mongodb</span><span>weaviate</span></div></div>
+      <div class="skill-group reveal"><h4>tools</h4><div class="tags"><span>git</span><span>docker</span><span>gcp</span><span>postman</span><span>junit</span><span>vs code</span></div></div>
+      <div class="skill-group reveal"><h4>ai-assisted dev</h4><div class="tags"><span>cursor</span><span>claude code</span><span>cline</span><span>codex</span><span>antigravity</span></div></div>
+    </div>
+  </section>
+
+  <!-- education -->
+  <section class="section" id="education">
+    <p class="handnote reveal">the alma mater</p>
+    <h2 class="section-title reveal">school</h2>
+    <article class="card reveal">
+      <p class="card-date">expected may 2027 · madison, wi</p>
+      <h3>b.s. computer science + data science</h3>
+      <p class="card-org">university of wisconsin–madison</p>
+      <div class="tags"><span>sql &amp; databases</span><span>data structures</span><span>algorithms</span><span>linear algebra</span><span>supervised &amp; unsupervised learning</span><span>pytorch</span><span>operating systems</span><span>ai/ml systems</span></div>
+    </article>
+  </section>
+
+  <!-- contact -->
+  <section class="section" id="contact">
+    <p class="handnote reveal">no recruiters were harmed</p>
+    <h2 class="section-title reveal">say<br>hello</h2>
+    <p class="lede reveal">new grad swe / ai-ml roles · from 2027</p>
+    <div class="hero-ctas reveal" style="justify-content:flex-start">
+      <a href="mailto:samyakjain2575@gmail.com" class="btn">samyakjain2575@gmail.com</a>
+      <button class="btn" onclick="window.print();return false;">print resume</button>
+    </div>
+    <div class="contact-links reveal">
+      <a href="tel:+16082397261">608-239-7261</a>
+      <a href="https://linkedin.com/in/samyak1" target="_blank" rel="noopener">linkedin</a>
+      <a href="https://github.com/samyakjain-1" target="_blank" rel="noopener">github</a>
+      <a href="https://samyak1.tech" target="_blank" rel="noopener">samyak1.tech</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="brand-band">
+  <div class="band-inner">
+    <p class="band-title">thanks for stopping by!</p>
+    <p class="band-sub">© 2026 samyak jain · designed to a DESIGN.md</p>
+  </div>
+  <svg class="sticker sparkle" viewBox="0 0 40 40" width="36" height="36"><path d="M20 2 L24 16 L38 20 L24 24 L20 38 L16 24 L2 20 L16 16 Z" fill="#22c55e" stroke="#171717" stroke-width="2" stroke-linejoin="round"/></svg>
 </footer>
 
 <script src="script.js"></script>
