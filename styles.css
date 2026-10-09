@@ -184,6 +184,17 @@ footer { text-align: center; padding: 40px 24px; border-top: 1px solid var(--col
 .reveal { opacity: 0; transform: translateY(28px); transition: opacity .7s ease, transform .7s ease; }
 .reveal.visible { opacity: 1; transform: none; }
 
+/* ---------- Print: clean resume output ---------- */
+@media print {
+  .nav-pill, .hero-ctas, .contact .hero-ctas, footer, .news-arrow { display: none !important; }
+  .hero { min-height: auto; background: #fff; padding: 24px; }
+  .display { font-size: 54px; }
+  .reveal { opacity: 1 !important; transform: none !important; }
+  .section { padding: 28px 24px; }
+  .card { break-inside: avoid; box-shadow: none; }
+  body { font-size: 12px; }
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 720px) {
   .nav-links {
